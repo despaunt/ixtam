@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Контакты</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-placeholder">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="Экстам"></a>
+                </div>
+                <div class="logo-text">
+                </div>
+            </div>
+
+            <div class="search-wrapper">
+                <form class="search-form" id="searchForm">
+                    <input type="text" placeholder="Поиск запчастей по артикулу или названию..." id="searchInput">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="phone">
+                <a href="tel:+79999999999">+7 999 999 99 99</a>
+            </div>
+
+            <div class="user-actions">
+                <a href="auth.html" id="loginButton">
+                    <i class="far fa-user"></i>
+                    <span>Войти</span>
+                </a>
+
+                <button id="logoutButton" style="display:none;">
+                    <i class="fas fa-right-from-bracket"></i>
+                    <span>Выйти</span>
+                </button>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>Корзина</span></a>
+            </div>
+
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="category.html">Каталог запчастей</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contacts-hero">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>Свяжитесь с нами любым удобным способом</p>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <div class="container">
+
+                <div class="contacts-grid">
+
+                    <!-- контакты -->
+                    <div class="contacts-info">
+
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Телефон</h3>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>info@autoparts.ru</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-location-dot"></i>
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Примерная, 10</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Время работы</h3>
+                            <p>Пн–Пт: 9:00 – 18:00</p>
+                        </div>
+
+                    </div>
+
+                    <!-- форма -->
+                    <div class="contacts-form">
+
+                        <h2>Напишите нам</h2>
+                        <form action="#successModal">
+
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Сообщение" rows="5" required></textarea>
+
+                            <button type="submit">Отправить</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-column">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="category.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 999 999 99 99</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 IXTAM. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/user.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/contacts.js"></script>
+
+</body>
+
+<div id="successModal" class="modal">
+    <div class="modal-content">
+
+        <h2>Сообщение отправлено</h2>
+        <p>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+
+        <a href="#" class="modal-btn">ОК</a>
+
+    </div>
+</div>
+
+</html> 

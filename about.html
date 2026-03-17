@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>О компании</title>
+</head>
+
+<body>
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <div class="logo-placeholder">
+                <a href="index.html"><img src="assets/img/logo.png" alt="Экстам"></a>
+            </div>
+            <div class="logo-text">
+            </div>
+        </div>
+
+        <div class="search-wrapper">
+            <form class="search-form" id="searchForm">
+                <input type="text" placeholder="Поиск запчастей по артикулу или названию..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="phone">
+            <a href="tel:+79999999999">+7 999 999 99 99</a>
+        </div>
+
+        <div class="user-actions">
+            <a href="auth.html" id="loginButton">
+                <i class="far fa-user"></i>
+                <span>Войти</span>
+            </a>
+
+            <button id="logoutButton" style="display:none;">
+                <i class="fas fa-right-from-bracket"></i>
+                <span>Выйти</span>
+            </button>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>Корзина</span></a>
+        </div>
+
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="category.html">Каталог запчастей</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main>
+
+        <section class="about-hero">
+            <div class="container">
+                <h1>О компании</h1>
+                <p>Надёжные запчасти для спецтехники по всей России</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+                        <h2>Кто мы</h2>
+                        <p>
+                            Мы — компания, специализирующаяся на продаже запчастей для спецтехники:
+                            Caterpillar, JCB, Perkins и других брендов.
+                        </p>
+
+                        <p>
+                            Работаем напрямую с поставщиками, поэтому гарантируем качество
+                            и доступные цены.
+                        </p>
+
+                        <h2>Наша миссия</h2>
+                        <p>
+                            Обеспечить клиентов надежными деталями и быстрым сервисом,
+                            чтобы техника работала без простоев.
+                        </p>
+
+                    </div>
+
+                    <div class="about-img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-advantages">
+            <div class="container">
+
+                <h2>Почему выбирают нас</h2>
+
+                <div class="advantages-grid">
+
+                    <div class="adv-card">
+                        <h3>Качество</h3>
+                        <p>Только проверенные поставщики и оригинальные детали</p>
+                    </div>
+
+                    <div class="adv-card">
+                        <h3>Доставка</h3>
+                        <p>Быстрая отправка по всей стране</p>
+                    </div>
+
+                    <div class="adv-card">
+                        <h3>Цены</h3>
+                        <p>Оптимальные цены без посредников</p>
+                    </div>
+
+                    <div class="adv-card">
+                        <h3>Поддержка</h3>
+                        <p>Помогаем подобрать нужные запчасти</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-column">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="category.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 999 999 99 99</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 IXTAM. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/user.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Категории</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-placeholder">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="Экстам"></a>
+                </div>
+                <div class="logo-text">
+                </div>
+            </div>
+
+            <div class="search-wrapper">
+                <form class="search-form" id="searchForm">
+                    <input type="text" placeholder="Поиск запчастей по артикулу или названию..." id="searchInput">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="phone">
+                <a href="tel:+79999999999">+7 999 999 99 99</a>
+            </div>
+
+            <div class="user-actions">
+                <a href="auth.html" id="loginButton">
+                    <i class="far fa-user"></i>
+                    <span>Войти</span>
+                </a>
+
+                <button id="logoutButton" style="display:none;">
+                    <i class="fas fa-right-from-bracket"></i>
+                    <span>Выйти</span>
+                </button>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>Корзина</span></a>
+            </div>
+
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="category.html">Каталог запчастей</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="catalog">
+
+            <div class="container">
+
+                <h1 class="catalog-title">Каталог запчастей</h1>
+
+                <div class="catalog-wrapper">
+
+                    <aside class="catalog-filters">
+
+                        <h3>Категории</h3>
+
+                        <ul class="category-filter">
+                            <li data-category="all">Все</li>
+                            <li data-category="oils">Масла и жидкости</li>
+                            <li data-category="filters">Фильтры</li>
+                            <li data-category="engine">Детали двигателя</li>
+                            <li data-category="hydraulics">Гидравлика</li>
+                            <li data-category="brakes">Тормозная система</li>
+                            <li data-category="electrics">Электрика и аккумуляторы</li>
+                        </ul>
+
+                        <h3>Цена</h3>
+
+                        <input type="number" id="priceMin" placeholder="От">
+                        <input type="number" id="priceMax" placeholder="До">
+
+                        <button class="filter-btn">Применить</button>
+
+                    </aside>
+
+                    <div class="catalog-products">
+
+                        <div class="products-grid">
+
+                            <div class="product-card" data-id="1" data-name="Фильтр масляный CAT 1r1808"
+                                data-price="1200" data-img="assets/img/tovar1.png" data-category="filters">
+                                <img src="assets/img/tovar1.png" alt="">
+                                <h3>Фильтр масляный CAT 1r1808</h3>
+                                <div class="price">1 200 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                            <div class="product-card" data-id="2" data-name="Фильтр воздушный JCB 915801"
+                                data-price="950" data-img="assets/img/tovar2.png" data-category="filters">
+                                <img src="assets/img/tovar2.png" alt="">
+                                <h3>Фильтр воздушный JCB 915801</h3>
+                                <div class="price">950 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                            <div class="product-card" data-id="3" data-name="Масло моторное 10W-40" data-price="2300"
+                                data-img="assets/img/tovar3.png" data-category="oils">
+                                <img src="assets/img/tovar3.png" alt="">
+                                <h3>Масло моторное 10W-40</h3>
+                                <div class="price">2 300 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                            <div class="product-card" data-id="4" data-name="Насос гидравлический 4221296"
+                                data-price="1800" data-img="assets/img/tovar4.png" data-category="hydraulics">
+                                <img src="assets/img/tovar4.png" alt="">
+                                <h3>Насос гидравлический 4221296</h3>
+                                <div class="price">1 800 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                            <div class="product-card" data-id="5" data-name="Подшипники 42233454" data-price="700"
+                                data-img="assets/img/tovar5.png" data-category="engine">
+                                <img src="assets/img/tovar5.png" alt="">
+                                <h3>Подшипники 42233454</h3>
+                                <div class="price">700 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                            <div class="product-card" data-id="6" data-name="Топливный фильтр CAT 5416956"
+                                data-price="1150" data-img="assets/img/tovar6.png" data-category="filters">
+                                <img src="assets/img/tovar6.png" alt="">
+                                <h3>Топливный фильтр CAT 5416956</h3>
+                                <div class="price">1 150 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                            <div class="product-card" data-id="7" data-name="Патрубок 4927902" data-price="600"
+                                data-img="assets/img/tovar7.png" data-category="engine">
+                                <img src="assets/img/tovar7.png" alt="">
+                                <h3>Патрубок 4927902</h3>
+                                <div class="price">600 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                            <div class="product-card" data-id="8" data-name="Батарея аккумуляторная 1535710"
+                                data-price="5400" data-img="assets/img/tovar8.png" data-category="electrics">
+                                <img src="assets/img/tovar8.png" alt="">
+                                <h3>Батарея аккумуляторная 1535710</h3>
+                                <div class="price">5 400 ₽</div>
+                                <button class="buy-btn">В корзину</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-column">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="category.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 999 999 99 99</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 IXTAM. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/catalog.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/user.js"></script>
+
+</body>
+
+</html> 
